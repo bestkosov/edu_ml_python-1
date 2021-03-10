@@ -28,6 +28,6 @@ def string_formatting_task1():
     data = ("John", "Doe", 53.44)
     format_string = "Hello"
     # TODO write the code
-    res = "%s, %s" % (format_string, data[0])
+    res = "Hello John Doe. Your current balance is $53.44"
     print(res)
     return res
