@@ -28,5 +28,5 @@ def variables_task1():
 
     my_string = "hello"
     my_float = 11.025
-    my_int = 7
+    my_int = 7.0
     return my_string, my_float, my_int
