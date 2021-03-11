@@ -36,6 +36,12 @@ def dictionary_task1():
     Create new dictionary with contact list - Alex, Igor, Ilon, Nikola.
     Add "Max" to the phonebook with the phone number +38097212199, and remove Alex from the phonebook.
     """
-    my_dictionary = {}
+    my_dictionary = {
+        "Alex": +380972121211,
+        "Igor": +380972121222,
+        "Ilon": +380972121233,
+        "Nikola": +380972121224}
+    my_dictionary["Max"] = +38097212199
+    my_dictionary.pop("Alex")
     # TODO write the code
     return my_dictionary
