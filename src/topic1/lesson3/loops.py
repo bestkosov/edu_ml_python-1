@@ -46,6 +46,8 @@ def loops_task1():
     """
     task_list = []
     # TODO write the code
+    for n in range(500):
+        task_list.append(n)
     return task_list
 
 
