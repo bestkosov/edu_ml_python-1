@@ -6,7 +6,7 @@ if __name__ == '__main__':
     4.2. for Statements
     4.3. The range() Function
     4.4. break and continue Statements, and else Clauses on Loops
-    4.5. pass Statements¶
+    4.5. pass Statements
     """
 
     # For loops iterate over a given sequence.
