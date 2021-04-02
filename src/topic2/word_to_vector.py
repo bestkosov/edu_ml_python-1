@@ -25,7 +25,10 @@ def collect_all_unique_words(list_of_sentences):
     1. all unique words have to be collected to the list
     """
     # TODO 1 use HOF 'map, filter, etc'
-    return None
+    mS = (sentence1 + sentence2 + sentence3)
+    mS = mS.replace('.', ' ').split()
+    mS = list(set(mS))
+    return mS
 
 
 def to_lowercase_and_remove_stop_words(list_of_sentences):
@@ -35,7 +38,9 @@ def to_lowercase_and_remove_stop_words(list_of_sentences):
 
     """
     # TODO 2
-    return None
+    mS = list(map(str.lower, mS))
+    mS = list(filter(lambda x: len(x) > 2 and x != "also", mS))
+    return mS
 
 
 def create_matrix(list_of_sentences, count_of_columns):
@@ -49,7 +54,27 @@ def create_matrix(list_of_sentences, count_of_columns):
                               '   0  '--'  1  '--'   1   '--'...'
     """
     # TODO 3 collect all unique words from the all sentences
-    return None
+    s1 = []
+    s2 = []
+    s3 = []
+    for i in mS:
+        if i in sentence1.lower():
+            s1.append(1)
+        else:
+            s1.append(0)
+    for i in mS:
+        if i in sentence2.lower():
+            s2.append(1)
+        else:
+            s2.append(0)
+    for i in mS:
+        if i in sentence3.lower():
+            s3.append(1)
+        else:
+            s3.append(0)
+    matrix = [mS, s1, s2, s3]
+    return matrix
+
 
 
 if __name__ == '__main__':
