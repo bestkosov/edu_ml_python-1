@@ -16,7 +16,8 @@ class MyTestCase(unittest.TestCase):
     def test_matrix(self):
         matrix = matrixObject(count_of_columns=10)
         matrix.extend_matrix("TEST hello hello hello".split())
-        self.assertEqual(matrix.get_title(), ['hello', 'test'])
+        self.assertEqual(matrix.get_title(), ['hello', 'test', 'dir'])
+
 
 
 
